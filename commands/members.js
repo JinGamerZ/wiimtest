@@ -1,9 +1,9 @@
 module.exports = {
-  main: (bot, msg, settings) => {
-	//your code goes here
+     main: function(bot, msg) {
+		var start = Date.now();
+		var stop, diff;
 message.guild.memberCount
-  },
-  args: '<string>',
-  help: 'sample help text',
-  hide: false
-}
+		});
+    },
+    help: 'Ping the bot'
+};
