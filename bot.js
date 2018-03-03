@@ -153,6 +153,16 @@ bot.on("ready", () => {
     loadCommands();
 });
 
+// WELCOME MSG
+client.on("serverNewMember", (server, user) => {
+     client.sendMessage(user, "Welcome to: " + server.name);
+});
+
+client.on("message", (msg) => {
+     client.sendMessage(msg.author, "I can see you sent a message in: " + msg.channel.name + ", but I am just a simple bot and haven't been programmed to do anything special with messages yet.");
+});
+// END
+
 bot.on("message", msg => {
     if(msg.content.startsWith('<@'+bot.user.id+'>') || msg.content.startsWith('<@!'+bot.user.id+'>')) {
 		checkCommand(msg, true);
