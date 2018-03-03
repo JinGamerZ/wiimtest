@@ -1,13 +1,13 @@
 module.exports = {
-     main: function(bot, msg) {
-		var start = Date.now();
-		var stop, diff;
+  main: (bot, msg, settings) => {
+	//your code goes here
 client.on('message', message => {
-    if (message.content === '?creditos') {
+    if (message.content === '?creadores') {
     	message.reply('Wiim esta creado por @JinGamerZ Y @SrWitherHD.');
   	}
 });
-		});
-    },
-    help: 'Invitation link'
-};
+  },
+  args: '<string>',
+  help: 'sample help text',
+  hide: false
+}
