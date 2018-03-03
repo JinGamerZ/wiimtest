@@ -1,9 +1,8 @@
 module.exports = {
-     main: function(bot, msg) {
-		var start = Date.now();
-		var stop, diff;
-message.guild.memberCount
-		});
-    },
-    help: 'Ping the bot'
-};
+  main: (bot, msg, settings) => {
+    message.channel.send(There are currently ${message.guildmemberCount} Members on this Server!);
+  },
+  args: '<string>',
+  help: 'List of members',
+  hide: false
+}
